@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: go-qqlirqoe
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: go-qqlirqoe 
+  name: go-qqlirqoe
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: go-qqlirqoe 
